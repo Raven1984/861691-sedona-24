@@ -30,7 +30,48 @@
 
     <main class="container">
     
-      <!--Тут блок с формой-->
+      <section class="main-filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <h3>Инфраструктура:</h3>
+        <input type="checkbox" id="check-pool" checked>
+        <label for="check-pool">Бассейн</label>
+        <input type="checkbox" id="check-parking">
+        <label for="check-parking">Парковка</label>
+        <input type="checkbox" id="check-wifi">
+        <label for="check-wifi">Wi-Fi</label>
+        <h3>Тип жилья:</h3>
+        <input type="checkbox" id="check-hotel" checked>
+        <label for="check-hotel">Гостиница</label>
+        <input type="checkbox" id="check-motel" checked>
+        <label for="check-motel">Мотель</label>
+        <input type="checkbox" id="check-apartment" checked>
+        <label for="check-apartment">Апартаменты</label>
+        <h3>Стоимость в сутки (Р):</h3>
+        <!--Ниже скорее всего нужно использовать тег Output, но пока сделаю таблицей-->
+        <table> 
+          <tr>
+            <td>От 0</td>
+            <td>До 3000</td>
+          </tr>
+        </table>
+        <input type="range" min="0" max="3000" step="100">
+        <!--Кнопка Показать-->
+      </section>
+
+      <section class="main-sorting">
+        <p>
+          <b>Найдено: 3</b>
+        </p>
+        <table>
+          <caption>Сортировка:</caption>
+          <tr>
+            <td>по цене</td>
+            <td>по типу</td>
+            <td>по рейтингу</td>
+          </tr>
+        </table>
+        <!--Тут кнопки переключения-->
+      </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
