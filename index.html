@@ -110,6 +110,10 @@
       	 и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
 
+      <p>
+        <button type="button">Поиск гостиницы в Седоне</button>
+      </p>
+
       <section class="map">
       	<img src="img/map.jpg" width="1200" height="593" alt="Карта проезда">
       </section>
@@ -131,6 +135,35 @@
         </a>
       </p>
     </footer>
+
+    <section>
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="text" id="arrival-date" name="arrival-date" placeholder="24 Апреля 2017">
+        </p>
+        <p>
+          <label for="departure-date">Дата выезда:</label>
+          <input type="text" id="departure-date" name="departure-date" placeholder="4 Июля 2017">
+        </p>
+        <p>
+          <label for="grownup">Взрослые:</label>
+          <button type="button">-</button>
+          <input type="text" id="grownup" name="grownup">
+          <button type="button">+</button>
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <button type="button">-</button>
+          <input type="text" id="children" name="children">
+          <button type="button">+</button>
+        </p>
+        <p>
+          <button type="submit">Найти</button>
+        </p>
+      </form>
+    </section>
 
   </body>
 </html>
