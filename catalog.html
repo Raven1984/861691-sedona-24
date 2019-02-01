@@ -46,7 +46,9 @@
         <label for="check-motel">Мотель</label>
         <input type="checkbox" id="check-apartment" checked>
         <label for="check-apartment">Апартаменты</label>
-        <h3>Стоимость в сутки (Р):</h3>
+        <p>
+          <label for="cost-range">Стоимость в сутки (Р):</label>
+        </p>
         <!--Ниже скорее всего нужно использовать тег Output, но пока сделаю таблицей-->
         <table> 
           <tr>
@@ -54,8 +56,10 @@
             <td>До 3000</td>
           </tr>
         </table>
-        <input type="range" min="0" max="3000" step="100">
-        <!--Кнопка Показать-->
+        <input id="cost-range" type="range" min="0" max="3000" step="100">
+        <p>
+          <button type="submit">Показать</button>
+        </p>
       </section>
 
       <section class="main-sorting">
@@ -84,7 +88,9 @@
               <span>от 4000 р.</span>
             </p>
             <p>Рейтинг: 8,5</p>
-            <!--Место для кнопок и звезд-->
+            <!--Место для звезд-->
+            <a href="#" class="button">Подробнее</a>
+            <button type="button" class="button">Забронировать</button>
           </li>
           <li class="catalog-item">
             <img src="img/motel.jpg" width="135" height="90" alt="Фото мотеля">
@@ -94,7 +100,9 @@
               <span>от 3000 р.</span>
             </p>
             <p>Рейтинг: 8,9</p>
-            <!--Место для кнопок и звезд-->
+            <!--Место для звезд-->
+            <a href="#" class="button">Подробнее</a>
+            <button type="button" class="button">Забронировать</button>
           </li>
           <li class="catalog-item">
             <img src="img/apartment.jpg" width="135" height="90" alt="Фото апартаментов">
@@ -104,7 +112,9 @@
               <span>от 2000 р.</span>
             </p>
             <p>Рейтинг: 9,2</p>
-            <!--Место для кнопок и звезд-->
+            <!--Место для звезд-->
+            <a href="#" class="button">Подробнее</a>
+            <button type="button" class="button">Забронировать</button>
           </li>
         </ul>
       </section>
@@ -115,9 +125,9 @@
       <a href="#">#visitsedona</a>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютюб</a></li>
+          <li><a class="button social-button" href="#">Твиттер</a></li>
+          <li><a class="button social-button" href="#">Фейсбук</a></li>
+          <li><a class="button social-button" href="#">Ютюб</a></li>
         </ul>
       </div>
       <p>
