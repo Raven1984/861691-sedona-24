@@ -35,18 +35,18 @@
           <fieldset>
             <legend>Фильтр</legend>
             <h3>Инфраструктура:</h3>
-            <input type="checkbox" id="check-pool" checked>
+            <input type="checkbox" id="check-pool" name="check-pool" checked>
             <label for="check-pool">Бассейн</label>
-            <input type="checkbox" id="check-parking">
+            <input type="checkbox" id="check-parking" name="check-parking">
             <label for="check-parking">Парковка</label>
-            <input type="checkbox" id="check-wifi">
+            <input type="checkbox" id="check-wifi" name="check-wifi">
             <label for="check-wifi">Wi-Fi</label>
             <h3>Тип жилья:</h3>
-            <input type="checkbox" id="check-hotel" checked>
+            <input type="checkbox" id="check-hotel" name="check-hotel" checked>
             <label for="check-hotel">Гостиница</label>
-            <input type="checkbox" id="check-motel" checked>
+            <input type="checkbox" id="check-motel" name="check-motel" checked>
             <label for="check-motel">Мотель</label>
-            <input type="checkbox" id="check-apartment" checked>
+            <input type="checkbox" id="check-apartment" name="check-apartment" checked>
             <label for="check-apartment">Апартаменты</label>
             <p>
               <label for="cost-range">Стоимость в сутки (Р):</label>
@@ -58,7 +58,7 @@
                 <td>До 3000</td>
               </tr>
             </table>
-            <input id="cost-range" type="range" min="0" max="3000" step="100">
+            <input id="cost-range" name="cost-range" type="range" min="0" max="3000" step="100">
             <p>
               <button type="submit">Показать</button>
             </p>
