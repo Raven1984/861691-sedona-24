@@ -32,25 +32,44 @@
     
       <section class="main-filter">
         <form class="main-filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="visually-hidden">Фильтры</h2>
           <fieldset>
-            <legend>Фильтр</legend>
-            <h3>Инфраструктура:</h3>
-            <input type="checkbox" id="check-pool" name="check-pool" checked>
-            <label for="check-pool">Бассейн</label>
-            <input type="checkbox" id="check-parking" name="check-parking">
-            <label for="check-parking">Парковка</label>
-            <input type="checkbox" id="check-wifi" name="check-wifi">
-            <label for="check-wifi">Wi-Fi</label>
-            <h3>Тип жилья:</h3>
-            <input type="checkbox" id="check-hotel" name="check-hotel" checked>
-            <label for="check-hotel">Гостиница</label>
-            <input type="checkbox" id="check-motel" name="check-motel" checked>
-            <label for="check-motel">Мотель</label>
-            <input type="checkbox" id="check-apartment" name="check-apartment" checked>
-            <label for="check-apartment">Апартаменты</label>
+            <legend>Инфраструктура</legend>
+            <div class="field">
+              <input type="checkbox" id="check-pool" name="check-pool" checked>
+              <label for="check-pool">Бассейн</label>
+            </div>
+            <div class="field">
+              <input type="checkbox" id="check-parking" name="check-parking">
+              <label for="check-parking">Парковка</label>
+            </div>
+            <div class="field">
+              <input type="checkbox" id="check-wifi" name="check-wifi">
+              <label for="check-wifi">Wi-Fi</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <div class="field">
+              <input type="checkbox" id="check-hotel" name="check-hotel" checked>
+              <label for="check-hotel">Гостиница</label>
+            </div>
+            <div class="field">
+              <input type="checkbox" id="check-motel" name="check-motel" checked>
+              <label for="check-motel">Мотель</label>
+            </div>
+            <div class="field">
+              <input type="checkbox" id="check-apartment" name="check-apartment" checked>
+              <label for="check-apartment">Апартаменты</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <!--
             <p>
               <label for="cost-range">Стоимость в сутки (Р):</label>
             </p>
+            -->
             <!--Ниже скорее всего нужно использовать тег Output, но пока сделаю таблицей-->
             <table> 
               <tr>
@@ -94,7 +113,7 @@
             <p>Рейтинг: 8,5</p>
             <!--Место для звезд-->
             <a href="#" class="button">Подробнее</a>
-            <button type="button" class="button">Забронировать</button>
+            <a href="#" class="button">Забронировать</a>
           </li>
           <li class="catalog-item">
             <img src="img/motel.jpg" width="135" height="90" alt="Фото мотеля">
@@ -106,7 +125,7 @@
             <p>Рейтинг: 8,9</p>
             <!--Место для звезд-->
             <a href="#" class="button">Подробнее</a>
-            <button type="button" class="button">Забронировать</button>
+            <a href="#" class="button">Забронировать</a>
           </li>
           <li class="catalog-item">
             <img src="img/apartment.jpg" width="135" height="90" alt="Фото апартаментов">
@@ -118,7 +137,7 @@
             <p>Рейтинг: 9,2</p>
             <!--Место для звезд-->
             <a href="#" class="button">Подробнее</a>
-            <button type="button" class="button">Забронировать</button>
+            <a href="#" class="button">Забронировать</a>
           </li>
         </ul>
       </section>
