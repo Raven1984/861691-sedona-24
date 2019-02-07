@@ -45,7 +45,7 @@ a {
   color: #766357;
 }
 
-/* Это пока сложный для меня кусок который не получается совсем */
+/* Это пока сложный для меня кусок который не получается совсем. Картинка больше. Белая маска почему-то на пиксель-два отодвинута от низа. И т.д. */
 .background-logo {
   width: 1200px;
   height: 773px;
@@ -147,6 +147,11 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.visitsedona {
+  font-size: 21px;
+  line-height: 26px;	
+}
+
 .social-list {
   list-style: none;
 }
@@ -158,3 +163,59 @@ a {
   color: #000000;
 }
 
+.find-form-item input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.find-form-item input:hover {
+  background-color: #ebebeb;
+}
+
+.find-form-item input:focus {
+  background-color: transparent;
+  border: 2px #e5e5e5 solid; /* Форма увеличивается в фокусе из за появления рамки. Нужно что-то менять. ) */
+}
+
+/* Далее для страницы каталога */
+
+.catalog-item span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.reitings {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666; 
+}
+
+.hotel-type {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;	
+}
+
+.hotel-type:hover,
+.hotel-type:focus {
+ color: #81b3d2;
+}
+
+.hotel-type:active {
+ color: rgba(0, 0, 0, 0.3);
+}
+
+/* Такой же непонятный кусок как и с первым бэкграундом ( */
+.main-filter {
+  width: 1200px;
+  height: 800px;
+  background-image: url("../img/filter-background.jpg");
+  background-size: 1200px 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
