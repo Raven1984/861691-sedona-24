@@ -45,22 +45,21 @@ a {
   color: #766357;
 }
 
-/* Это пока сложный для меня кусок который не получается совсем. Картинка больше. Белая маска почему-то на пиксель-два отодвинута от низа. И т.д. */
 .background-logo {
   width: 1200px;
-  height: 773px;
-  background-image: url("../img/polygon.svg"), url("../img/welcome.svg"), url("../img/background-photo.jpg");
-  background-size: 1200px 59px, 459px 353px, 1200px 773px;
-  background-position: center bottom, center center, top center;
+  height: 510px;
+  background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
+  background-size: 1200px 59px, cover;
+  background-position: center bottom, center -55px; /* Сдвиг бэкграунда подбирал на глаз */
   background-repeat: no-repeat;
 }
 
-.block-1 h2 {
+.welcome h2 {
   font-size: 21px;
   line-height: 26px;	
 }
 
-.block-1 p {
+.welcome p {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -96,12 +95,12 @@ a {
   background-color: #eeeeee;
 }
 
-.block-2 h2 {
+.interested h2 {
   font-size: 30px;
   line-height: 36px;	
 }
 
-.block-2 p {
+.interested p {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -138,7 +137,7 @@ a {
 .button-find:focus,
 .social-button:hover,
 .social-button:focus {
- background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .button-find:active,
@@ -203,19 +202,16 @@ a {
 
 .hotel-type:hover,
 .hotel-type:focus {
- color: #81b3d2;
+  color: #81b3d2;
 }
 
 .hotel-type:active {
- color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-/* Такой же непонятный кусок как и с первым бэкграундом ( */
 .main-filter {
-  width: 1200px;
-  height: 800px;
   background-image: url("../img/filter-background.jpg");
-  background-size: 1200px 800px;
-  background-position: top center;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
