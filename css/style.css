@@ -15,6 +15,13 @@ a {
   text-decoration: none;
 }
 
+/*
+.shift {
+  width: 1200px;
+  margin: 0 auto;
+}
+*/
+
 .header-logo {
   position: absolute;
   left: 530px;
@@ -64,6 +71,13 @@ a {
   color: #766357;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+  
+  width: 1200px; 
+}
+
 .background-logo {
   width: 1200px;
   height: 510px;
@@ -72,7 +86,7 @@ a {
   background-position: center bottom, center -55px; /* Сдвиг бэкграунда подбирал на глаз */
   background-repeat: no-repeat;
 
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 .welcome {
@@ -194,13 +208,37 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  min-height: 120px;
+}
+
+.main-footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .visitsedona {
   font-size: 21px;
   line-height: 26px;	
+
+  width: 240px;
+}
+
+.footer-social {
+  width: 400px;
 }
 
 .social-list {
   list-style: none;
+}
+
+.html-academy {
+  width: 240px;
 }
 
 .website-by {
@@ -262,4 +300,18 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  min-height: 120px;
+}
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
