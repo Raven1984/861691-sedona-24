@@ -265,11 +265,30 @@ a {
 
 /* Далее для страницы каталога */
 
+.catalog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  padding: 30px 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-item img {
+  margin-right: 30px;
+}
+
 .catalog-item span {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+}
+
+.catalog-reitings {
+  margin-left: auto;
 }
 
 .reitings {
