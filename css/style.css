@@ -82,7 +82,7 @@ a {
   width: 1200px;
   height: 510px;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
-  background-size: 1200px 59px, cover;
+  background-size: 1200px 57px, cover;
   background-position: center bottom, center -55px; /* Сдвиг бэкграунда подбирал на глаз */
   background-repeat: no-repeat;
 
