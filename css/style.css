@@ -295,6 +295,39 @@ p.feature-number {
   background-color: #eeeeee;
 }
 
+h3.with-icon {
+  position: relative;
+}
+
+h3.with-icon::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -38px;
+
+  width: 76px;
+  height: 80px;
+}
+
+h3.with-icon.icon-1::before {
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
+h3.with-icon.icon-2::before {
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
+h3.with-icon.icon-3::before {
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 0;
+}
+
 .interested {
   margin: 0;
   padding: 0;
