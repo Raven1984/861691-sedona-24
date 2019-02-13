@@ -331,6 +331,7 @@ h3.with-icon.icon-3::before {
 .interested {
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
   width: 575px;
   margin-left: 312px;
 
@@ -359,6 +360,8 @@ h3.with-icon.icon-3::before {
 }
 
 .button {
+  display: inline-block;
+
   font: inherit;
 
   text-align: center;
@@ -370,7 +373,18 @@ h3.with-icon.icon-3::before {
   border: none;
 }
 
+.popap-button-container {
+  margin-left: 316px;
+}
+
 .button-popap {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 140px;
+  padding-right: 140px;
   background-color: #766357;	
 }
 
@@ -395,6 +409,11 @@ h3.with-icon.icon-3::before {
 .social-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.map {
+  height: 473px;
+  overflow: hidden;
 }
 
 .main-footer {
