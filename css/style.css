@@ -48,12 +48,13 @@ img {
 .site-navigation {
   margin: 0;
   padding: 0;
-  min-height: 55px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .site-navigation li {
@@ -111,7 +112,7 @@ img {
   height: 510px;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
   background-size: 1200px 57px, cover;
-  background-position: center bottom, center -55px; /* Сдвиг бэкграунда подбирал на глаз */
+  background-position: center bottom, center -55px;
   background-repeat: no-repeat;
 
   margin-bottom: 60px;
@@ -189,7 +190,7 @@ img {
 
 .feature-item:nth-of-type(1) .feature-item-discription {
   padding-top: 46px;
-  padding-bottom: 64px;
+  padding-bottom: 60px;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -197,13 +198,13 @@ img {
 .feature-item:nth-of-type(1) .feature-item-background {
   background-image: url("../img/feature-photo-2.jpg");
   background-repeat: no-repeat;
-  background-position: center -75px;
+  background-position: center -77px;
   background-size: cover;
 }
 
 .feature-item:nth-of-type(2) .feature-item-discription {
-  padding-top: 49px;
-  padding-bottom: 55px;
+  padding-top: 46px;
+  padding-bottom: 60px;
   padding-left: 49px;
   padding-right: 49px;
 }
@@ -302,7 +303,7 @@ h3.with-icon {
 h3.with-icon::before {
   content: "";
   position: absolute;
-  bottom: 50px;
+  bottom: 45px;
   left: 50%;
   margin-left: -38px;
 
