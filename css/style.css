@@ -373,6 +373,10 @@ h3.with-icon.icon-3::before {
   border: none;
 }
 
+.button-reserv {
+  background-color: #766357;  
+}
+
 .popap-button-container {
   margin-left: 316px;
 }
@@ -389,11 +393,14 @@ h3.with-icon.icon-3::before {
 }
 
 .button-popap:hover,
-.button-popap:focus {
+.button-popap:focus,
+.button-reserv:hover,
+.button-reserv:focus {
   background-color: #604e43;
 }
 
-.button-popap:active {
+.button-popap:active,
+.button-reserv:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -420,17 +427,28 @@ h3.with-icon.icon-3::before {
   margin: 0;
   padding: 0;
   width: 1200px;
-  min-height: 120px;
 }
 
 .main-footer .footer-container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  padding-left: 73px;
+  padding-right: 73px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
 
-.visitsedona {
+p.visitsedona {
+  margin: 0;
+  padding: 0;
+
+  margin-right: 212px;
+  padding-left: 60px;
+  box-sizing: border-box;
+
   font-size: 21px;
   line-height: 26px;	
 
@@ -438,18 +456,77 @@ h3.with-icon.icon-3::before {
 }
 
 .footer-social {
-  width: 400px;
+  margin: 0;
+  padding: 0;
+  width: 150px;
 }
 
 .social-list {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
 }
 
-.html-academy {
-  width: 240px;
+.social-button {
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
-.website-by {
+.social-button::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  top: 50%;
+  left: 50%;
+
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+.social-button.tw-button::before {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-button.fb-button::before {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-button.yt-button::before {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-button:active::before {
+  opacity: 0.3;
+}
+
+p.html-academy {
+  margin: 0;
+  padding: 0; 
+  margin-left: auto;
+  width: 240px;
+
+  /*text-align: center;*/
+
+ background-color: rgba(255,0,0,0.3); 
+}
+
+span.website-by {
+  /*margin-right: 8px;*/
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
