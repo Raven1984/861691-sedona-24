@@ -439,7 +439,8 @@ span.website-by {
 /* Стилизация блока popap */
 .popap-find-form {
   padding: 55px;
-  width: 576px;
+  width: 568px;
+  box-sizing: border-box;
   min-height: 395px; /* Временно для стилизации */
   background-color: gray; /* Временно для стилизации */
 }
