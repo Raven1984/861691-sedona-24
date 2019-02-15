@@ -20,14 +20,13 @@ img {
   height: auto;
 }
 
-/*
-.shift {
+.center-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
-*/
 
-
+/* Стилизация блока header */
 .header-logo {
   position: absolute;
   left: 530px;
@@ -39,53 +38,31 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-
   background-color: #ffffff;
-
-  width: 1200px;
 }
 
 .site-navigation {
   margin: 0;
   padding: 0;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   list-style: none;
   display: flex;
   flex-direction: row;
 }
 
-.site-navigation li {
+.navigation-item {
   width: 239px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
-.site-navigation li:nth-child(3) {
+.navigation-item:nth-child(3) {
   margin-left: auto;
 }
 
 .site-navigation a {
   color: #000000;
 }
-
-/* В этом участке вложенность получается до 3-го уровня :-( */
-.site-navigation li:nth-of-type(1) a {
-  padding-left: 72px;
-}
-
-.site-navigation li:nth-of-type(2) a {
-  padding-left: 73px;
-}
-
-.site-navigation li:nth-of-type(3) a {
-  padding-left: 76px;
-}
-
-.site-navigation li:nth-of-type(4) a {
-  padding-left: 88px;
-}
-
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -100,47 +77,33 @@ img {
   color: #766357;
 }
 
-.container {
-  margin: 0;
-  padding: 0;
-  
-  width: 1200px; 
-}
-
+/* Стилизация блока main */
 .background-logo {
   width: 1200px;
   height: 510px;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
   background-size: 1200px 57px, cover;
-  background-position: center bottom, center -55px;
+  background-position: center bottom, center -57px;
   background-repeat: no-repeat;
-
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .welcome {
-  margin: 0;
-  padding: 0;
   width: 575px;
-  margin-left: 312px;
-
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .welcome h2 {
-  margin: 0;
-  padding: 0;
   font-size: 21px;
   line-height: 26px;	
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .welcome p {
-  margin: 0;
-  padding: 0;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -150,8 +113,6 @@ img {
 }
 
 .features {
-  margin: 0;
-  padding: 0;
   margin-bottom: 50px;
 }
 
@@ -159,7 +120,7 @@ img {
 .features-list-nested,
 .catalog-list {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   list-style: none; 
 }
 
@@ -175,45 +136,29 @@ img {
 }
 
 .feature-item-discription {
-  margin: 0;
-  padding: 0; 
   box-sizing: border-box;
   width: 400px;
   background-color: #81b3d2;
 }
 
 .feature-item-background {
-  margin: 0;
-  padding: 0; 
   width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.feature-item:nth-of-type(1) .feature-item-discription {
-  padding-top: 46px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-  padding-right: 60px;
+.feature-item-discription {
+  padding: 50px 40px;
 }
 
 .feature-item:nth-of-type(1) .feature-item-background {
   background-image: url("../img/feature-photo-2.jpg");
-  background-repeat: no-repeat;
   background-position: center -77px;
-  background-size: cover;
-}
-
-.feature-item:nth-of-type(2) .feature-item-discription {
-  padding-top: 46px;
-  padding-bottom: 60px;
-  padding-left: 49px;
-  padding-right: 49px;
 }
 
 .feature-item:nth-of-type(2) .feature-item-background {
   background-image: url("../img/feature-photo-1.jpg");
-  background-repeat: no-repeat;
   background-position: center -75px;
-  background-size: cover;
 }
 
 .features-list-nested {
@@ -222,50 +167,15 @@ img {
 }
 
 .nested-item {
+  padding: 50px 60px 60px;
   width: 400px;
   box-sizing: border-box;
+  background-color: #eeeeee;
 }
 
-.feature-item:nth-of-type(1) .nested-item:nth-of-type(1) {
-  padding-top: 161px;
-  padding-bottom: 80px;
-  padding-left: 73px;
-  padding-right: 75px;
-}
-
-.feature-item:nth-of-type(1) .nested-item:nth-of-type(2) {
-  padding-top: 161px;
-  padding-bottom: 80px;
-  padding-left: 58px;
-  padding-right: 58px;
-}
-
-.feature-item:nth-of-type(1) .nested-item:nth-of-type(3) {
-  padding-top: 161px;
-  padding-bottom: 80px;
-  padding-left: 64px;
-  padding-right: 63px;
-}
-
-.feature-item:nth-of-type(2) .nested-item:nth-of-type(1) {
-  padding-top: 50px;
-  padding-bottom: 60px;
-  padding-left: 95px;
-  padding-right: 97px;
-}
-
-.feature-item:nth-of-type(2) .nested-item:nth-of-type(2) {
-  padding-top: 50px;
-  padding-bottom: 60px;
-  padding-left: 65px;
-  padding-right: 65px;
-}
-
-.feature-item:nth-of-type(2) .nested-item:nth-of-type(3) {
-  padding-top: 50px;
-  padding-bottom: 60px;
-  padding-left: 75px;
-  padding-right: 75px;
+.nested-item.stretched {
+  padding: 170px 60px 80px;
+  background-color: #ffffff;
 }
 
 .feature-item h3 {
@@ -292,10 +202,6 @@ p.feature-number {
   color: #ffffff;
 }
 
-.feature-item:last-child .nested-item {
-  background-color: #eeeeee;
-}
-
 h3.with-icon {
   position: relative;
 }
@@ -306,36 +212,29 @@ h3.with-icon::before {
   bottom: 45px;
   left: 50%;
   margin-left: -38px;
-
   width: 76px;
   height: 80px;
+  background-repeat: no-repeat;
 }
 
 h3.with-icon.icon-1::before {
   background-image: url("../img/icon-1.svg");
-  background-repeat: no-repeat;
   background-position: 0 5px;
 }
 
 h3.with-icon.icon-2::before {
   background-image: url("../img/icon-3.svg");
-  background-repeat: no-repeat;
   background-position: 0 5px;
 }
 
 h3.with-icon.icon-3::before {
   background-image: url("../img/icon-2.svg");
-  background-repeat: no-repeat;
   background-position: 5px 0;
 }
 
 .interested {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
   width: 575px;
-  margin-left: 312px;
-
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,23 +257,27 @@ h3.with-icon.icon-3::before {
   font-weight: 400;
   color: #333333;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .button {
   display: inline-block;
-
   font: inherit;
-
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #81b3d2;
   border: none;
 }
 
+.button-detail {
+  padding: 3px 17px;
+  margin-right: 6px;
+}
+
 .button-reserv {
+  padding: 3px 16px;
   background-color: #766357;  
 }
 
@@ -383,14 +286,20 @@ h3.with-icon.icon-3::before {
 }
 
 .button-popap {
+  padding: 30px 140px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 140px;
-  padding-right: 140px;
   background-color: #766357;	
+}
+
+.button-find {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .button-popap:hover,
@@ -408,12 +317,15 @@ h3.with-icon.icon-3::before {
 
 .button-find:hover,
 .button-find:focus,
+.button-detail:hover,
+.button-detail:focus,
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
 }
 
 .button-find:active,
+.button-detail:active,
 .social-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
@@ -424,19 +336,9 @@ h3.with-icon.icon-3::before {
   overflow: hidden;
 }
 
-.main-footer {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-}
-
+/* Стилизация блока footer */
 .main-footer .footer-container {
-  padding-top: 36px;
-  padding-bottom: 36px;
-
-  padding-left: 73px;
-  padding-right: 73px;
-
+  padding: 36px 73px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -445,20 +347,15 @@ h3.with-icon.icon-3::before {
 p.visitsedona {
   margin: 0;
   padding: 0;
-
   margin-right: 212px;
   padding-left: 60px;
   box-sizing: border-box;
-
   font-size: 21px;
   line-height: 26px;	
-
   width: 240px;
 }
 
 .footer-social {
-  margin: 0;
-  padding: 0;
   width: 150px;
 }
 
@@ -484,30 +381,24 @@ p.visitsedona {
   position: absolute;
   width: 24px;
   height: 24px;
-
   top: 50%;
   left: 50%;
-
   margin-left: -12px;
   margin-top: -12px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .social-button.tw-button::before {
   background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social-button.fb-button::before {
   background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social-button.yt-button::before {
   background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social-button:active::before {
@@ -518,20 +409,39 @@ p.html-academy {
   margin: 0;
   padding: 0; 
   margin-left: auto;
+  padding-left: 15px;
+  box-sizing: border-box;
   width: 240px;
+}
 
-  /*text-align: center;*/
+.html-academy a {
+  display: flex;
+  align-items: center;
+}
 
- background-color: rgba(255,0,0,0.3); 
+.html-academy a:hover path,
+.html-academy a:focus path {
+  fill: #81b3d2;
+}
+
+.html-academy a:active path {
+  fill: #bdbbbc;
 }
 
 span.website-by {
-  /*margin-right: 8px;*/
-
+  margin-right: 8px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+}
+
+/* Стилизация блока popap */
+.popap-find-form {
+  padding: 55px;
+  width: 576px;
+  min-height: 395px; /* Временно для стилизации */
+  background-color: gray; /* Временно для стилизации */
 }
 
 .find-form-item input {
@@ -578,10 +488,17 @@ span.website-by {
 }
 
 .reitings {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 13px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #666666; 
+  color: #666666;
+
+  background-color: #f2f2f2;
 }
 
 .hotel-type {
@@ -605,10 +522,63 @@ span.website-by {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  min-height: 120px;
 }
 
+.main-filter-form {
+  display: flex;
+  flex-direction: row;
+
+  min-height: 217px; /* Временно для разметки */
+}
+
+.main-sorting {
+    margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: rgba(255,0,0,0.3);
+}
+
+.main-sorting p:nth-child(1) {
+     margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000; 
+
+  background-color: rgba(150,150,0,0.3);
+}
+
+.main-sorting h4 {
+     margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000; 
+
+  background-color: rgba(0,0,255,0.3);
+}
+
+.sort-list {
+     margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; 
+  list-style: none; 
+
+  background-color: rgba(0,255,0,0.3);
+}
+
+.sort-item a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
 
 
 
