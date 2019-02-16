@@ -37,7 +37,7 @@
         <section class="main-filter">
           <form class="main-filter-form" action="https://echo.htmlacademy.ru" method="get">
             <h2 class="visually-hidden">Фильтры</h2>
-            <fieldset>
+            <fieldset class="filter-infrastructure">
               <legend>Инфраструктура</legend>
               <div class="field">
                 <input type="checkbox" id="check-pool" name="check-pool" checked>
@@ -52,7 +52,7 @@
                 <label for="check-wifi">Wi-Fi</label>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-housetype">
               <legend>Тип жилья:</legend>
               <div class="field">
                 <input type="checkbox" id="check-hotel" name="check-hotel" checked>
@@ -67,14 +67,8 @@
                 <label for="check-apartment">Апартаменты</label>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-cost">
               <legend>Стоимость в сутки (Р):</legend>
-              <!--
-              <p>
-                <label for="cost-range">Стоимость в сутки (Р):</label>
-              </p>
-              -->
-              <!--Ниже скорее всего нужно использовать тег Output, но пока сделаю таблицей-->
               <table> 
                 <tr>
                   <td>От 0</td>
@@ -96,28 +90,17 @@
           <h4>Сортировка:</h4>
           <ul class="sort-list">
             <li class="sort-item">
-              <a href="#">по цене</a>
+              <a href="#" class="sort-type sort-active">по цене</a>
             </li>
             <li class="sort-item">
-              <a href="#">по типу</a>
+              <a href="#" class="sort-type">по типу</a>
             </li>
             <li class="sort-item">
-              <a href="#">по рейтингу</a>
+              <a href="#" class="sort-type">по рейтингу</a>
             </li>
           </ul>
           <div class="sort-buttons-container">
-            <!--Тут кнопки переключения-->
           </div>
-          <!--
-          <table>
-            <caption>Сортировка:</caption>
-            <tr>
-              <td>по цене</td>
-              <td>по типу</td>
-              <td>по рейтингу</td>
-            </tr>
-          </table>
-          -->
         </section>
 
         <section class="catalog">
@@ -127,15 +110,19 @@
               <img src="img/hotel.jpg" width="135" height="90" alt="Фото гостиницы">
               <div class="catalog-description">
                 <a href="#" class="hotel-type">Amara resort & spa<a>
-                <p>
-                  <span>Гостиница </span>
-                  <span>от 4000 р.</span>
-                </p>
-                <a href="#" class="button button-detail">Подробнее</a>
-                <a href="#" class="button button-reserv">Забронировать</a>
+                <div class="catlog-block">
+                  <div class="catalog-detail-block">
+                    <p>Гостиница</p>
+                    <a href="#" class="button button-detail">Подробнее</a>
+                  </div>
+                  <div class="catalog-reserv-block">
+                    <p>от 4000 р.</p>
+                    <a href="#" class="button button-reserv">Забронировать</a>
+                  </div>
+                </div>
               </div>
               <div class="catalog-reitings">
-                <!--Место для звезд-->
+                <div class="stars"></div>
                 <p class="reitings">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -143,15 +130,19 @@
               <img src="img/motel.jpg" width="135" height="90" alt="Фото мотеля">
               <div class="catalog-description">
                 <a href="#" class="hotel-type">Desert quail inn<a>
-                <p>
-                  <span>Мотель</span>
-                  <span>от 3000 р.</span>
-                </p>
-                <a href="#" class="button button-detail">Подробнее</a>
-                <a href="#" class="button button-reserv">Забронировать</a>
+                <div class="catlog-block">
+                  <div class="catalog-detail-block">
+                    <p>Мотель</p>
+                    <a href="#" class="button button-detail">Подробнее</a>
+                  </div>
+                  <div class="catalog-reserv-block">
+                    <p>от 3000 р.</p>
+                    <a href="#" class="button button-reserv">Забронировать</a>
+                  </div>
+                </div>
               </div>
               <div class="catalog-reitings">
-                <!--Место для звезд-->
+                <div class="stars"></div>
                 <p class="reitings">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -159,15 +150,19 @@
               <img src="img/apartment.jpg" width="135" height="90" alt="Фото апартаментов">
               <div class="catalog-description">
                 <a href="#" class="hotel-type">Villas at poco diablo<a>
-                <p>
-                  <span>Апартаменты</span>
-                  <span>от 2000 р.</span>
-                </p>
-                <a href="#" class="button button-detail">Подробнее</a>
-                <a href="#" class="button button-reserv">Забронировать</a>
+                <div class="catlog-block">
+                  <div class="catalog-detail-block">
+                    <p>Апартаменты</p>
+                    <a href="#" class="button button-detail">Подробнее</a>
+                  </div>
+                  <div class="catalog-reserv-block">
+                    <p>от 2000 р.</p>
+                    <a href="#" class="button button-reserv">Забронировать</a>
+                  </div>
+                </div>
               </div>
               <div class="catalog-reitings">
-                <!--Место для звезд-->
+                <div class="stars"></div>
                 <p class="reitings">Рейтинг: 9,2</p>
               </div>
             </li>
