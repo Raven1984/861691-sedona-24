@@ -243,7 +243,7 @@ h3.with-icon.icon-3::before {
 .interested h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 36px;	
   text-align: center;
@@ -257,7 +257,7 @@ h3.with-icon.icon-3::before {
   font-weight: 400;
   color: #333333;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .button {
@@ -282,6 +282,7 @@ h3.with-icon.icon-3::before {
 }
 
 .popap-button-container {
+  position: relative;
   margin-left: 316px;
 }
 
@@ -296,10 +297,38 @@ h3.with-icon.icon-3::before {
 .button-find {
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-top: 24px;
   width: 100%;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.button-change {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  font-size: 0;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.button-change::before,
+.button-change::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  top: 18px;
+  left: 13px;
+  background-color: #cacaca;
+}
+
+.button-minus {
+}
+
+.button-plus::after {
+  transform: rotate(90deg);
 }
 
 .button-popap:hover,
@@ -329,6 +358,18 @@ h3.with-icon.icon-3::before {
 .social-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-change:hover::before,
+.button-change:hover::after,
+.button-change:focus::before,
+.button-change:focus::after {
+  background-color: #000000; 
+}
+
+.button-change:active::before,
+.button-change:active::after {
+  background-color: #81b3d2;
 }
 
 .map {
@@ -438,17 +479,56 @@ span.website-by {
 
 /* Стилизация блока popap */
 .popap-find-form {
+  position: absolute;
   padding: 55px;
   width: 568px;
   box-sizing: border-box;
-  min-height: 395px; /* Временно для стилизации */
-  background-color: gray; /* Временно для стилизации */
+  background-color: #ffffff;
+}
+
+.grown-children {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.find-hotel-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.find-form-item {
+  display: flex;
+  align-items: center;
+}
+
+.find-hotel-form p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.find-form-item label {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .find-form-item input {
+  padding: 0;
+  margin: 0;
+  padding: 12px 50px 12px 12px;
+  box-sizing: border-box;
   font: inherit;
   background-color: #f2f2f2;
   border: none;
+  height: 38px;
+  text-transform: uppercase;
+   
+  /*width: 100%;*/
+  /*width: 346px;*/
+}
+
+.grown-children input {
+  padding: 12px 14px;
+  width: 38px;
 }
 
 .find-form-item input:hover {
@@ -457,7 +537,7 @@ span.website-by {
 
 .find-form-item input:focus {
   background-color: transparent;
-  border: 2px #e5e5e5 solid; /* Форма увеличивается в фокусе из за появления рамки. Нужно что-то менять. ) */
+  border: 2px #e5e5e5 solid;
 }
 
 /* Далее для страницы каталога */
