@@ -324,11 +324,19 @@ h3.with-icon.icon-3::before {
   background-color: #cacaca;
 }
 
-.button-minus {
-}
-
 .button-plus::after {
   transform: rotate(90deg);
+}
+
+.show-button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  width: 137px;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
 .button-popap:hover,
@@ -370,6 +378,12 @@ h3.with-icon.icon-3::before {
 .button-change:active::before,
 .button-change:active::after {
   background-color: #81b3d2;
+}
+
+.show-button:hover,
+.show-button:focus {
+  color: #000000;
+  background-color: #ffffff; 
 }
 
 .map {
