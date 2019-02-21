@@ -544,6 +544,75 @@ span.website-by {
 
 /* Далее для страницы каталога */
 
+.main-filter {
+  padding: 27px 70px 31px 70px;
+  background-image: url("../img/filter-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-filter-form {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+
+.filter-cost {
+  margin-left: auto;
+}
+
+.main-filter-form legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.main-filter-form label {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.main-filter-form label::before {
+  content: "";
+  height: 23px;
+  width: 27px;
+  left: -40px;
+  top: -2px;
+  position: absolute;
+  background-image: url("../img/checkbox-off.svg");
+  background-size: 23px 23px;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+.main-filter-form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-size: 27px 23px;
+  background-position: 0;
+  background-repeat: no-repeat;  
+}
+
+.main-filter-form fieldset {
+  padding: 0;
+}
+
+.main-filter-form .field {
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.filter-infrastructure {
+  margin-right: 115px;
+  border: none;
+}
+
+.filter-housetype {
+  border: none; 
+}
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -618,25 +687,6 @@ span.website-by {
 
 .hotel-type:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.main-filter {
-  padding: 30px 70px;
-  background-image: url("../img/filter-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.main-filter-form {
-  display: flex;
-  flex-direction: row;
-
-  /*min-height: 217px; /* Временно для разметки */
-}
-
-.filter-cost {
-  margin-left: auto;
 }
 
 .main-sorting {
