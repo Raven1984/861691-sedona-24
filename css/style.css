@@ -321,17 +321,38 @@ h3.with-icon.icon-3::before {
   height: 3px;
   top: 18px;
   left: 13px;
-  background-color: #cacaca;
+  background-color: #a9a9a9;
 }
 
 .button-plus::after {
   transform: rotate(90deg);
 }
 
+.button-calendar {
+  width: 58px;
+  height: 38px;
+  font-size: 0;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.button-calendar path {
+  /*fill: #cacaca;*/
+  fill: #a9a9a9;
+}
+
+.button-calendar:hover path,
+.button-calendar:focus path {
+  fill: #000000; 
+}
+
+.button-calendar:active path {
+  fill: #81b3d2;
+}
+
 .show-button {
   display: block;
   margin: 0 auto;
-  /*padding: 6px 35px;*/
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -508,12 +529,12 @@ span.website-by {
 
 .grown-children {
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
 }
 
 .find-hotel-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .find-form-item {
@@ -527,28 +548,30 @@ span.website-by {
 }
 
 .find-form-item label {
-  display: inline-block;
   margin-right: 20px;
+  white-space: nowrap;
 }
 
 .find-form-item input {
   padding: 0;
   margin: 0;
-  padding: 12px 50px 12px 12px;
+  padding: 12px;
   box-sizing: border-box;
   font: inherit;
   background-color: #f2f2f2;
   border: none;
   height: 38px;
   text-transform: uppercase;
-   
-  /*width: 100%;*/
-  /*width: 346px;*/
+  width: 100%;
 }
 
 .grown-children input {
   padding: 12px 14px;
   width: 38px;
+}
+
+label.grow-label {
+  margin-right: 40px; 
 }
 
 .find-form-item input:hover {
@@ -673,7 +696,8 @@ span.website-by {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  width: 6px;
+  height: 6px;
 }
 
 .range-toggle-min {
