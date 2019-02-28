@@ -341,7 +341,6 @@ h3.with-icon.icon-3::before {
 }
 
 .button-calendar path {
-  /*fill: #cacaca;*/
   fill: #a9a9a9;
 }
 
@@ -699,10 +698,8 @@ label.grow-label {
   display: inline-block;
   font-size: 14px;
   line-height: 32px;
-  /*line-height: 38px;*/
   vertical-align: top;
   cursor: pointer;
-  /*background-color: red;*/
 }
 
 .price-controls .min-price,
@@ -843,6 +840,30 @@ label.grow-label {
   justify-content: space-between;
 }
 
+.stars {
+  width: 110px;
+  height: 17px;
+  background-repeat: no-repeat;
+}
+
+.two-stars {
+  background-image: url("../img/star.svg"), url("../img/star.svg");
+  background-size: 18px 17px;
+  background-position: right, 69px 0;
+}
+
+.three-stars {
+  background-image: url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg");
+  background-size: 18px 17px;
+  background-position: right, 69px 0, 45px 0;
+}
+
+.four-stars {
+  background-image: url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg");
+  background-size: 18px 17px;
+  background-position: right, 69px 0, 44px 0, 20px 0;
+}
+
 .reitings {
   margin: 0;
   padding: 0;
@@ -909,6 +930,28 @@ label.grow-label {
   display: flex;
   flex-direction: row; 
   list-style: none; 
+}
+
+.sort-buttons-container {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35px;
+  height: 10px;
+}
+
+.sort-button-active path {
+  fill: #81b3d2;
+}
+
+.sort-button:hover path, 
+.sort-button:focus path {
+  fill: #000000;
+}
+
+.sort-button:active path {
+  fill: #81b3d2;
 }
 
 a.sort-type {

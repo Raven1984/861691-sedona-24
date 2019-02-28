@@ -10,14 +10,17 @@ var child = popup.querySelector("[name=children]");
 var isStorageSupport = true;
 var lastChild = "";
 var lastGrown = "";
-  
+
+
+// Проверяем поддерживается ли localStorage и берем из него кол-во взрослых и детей  
 try {
   lastChild = localStorage.getItem("grownup");
   lastGrown = localStorage.getItem("childrens");
 } catch (err) {
   isStorageSupport = false;
 }
-  
+
+// Открываем и закрываем модальное окно, ставим фокус в первое поле и автоматически заполняем поля с кол-вом взрослых и детей
 butn.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
@@ -30,6 +33,7 @@ butn.addEventListener("click", function (evt) {
   arrDate.focus();
 });
 
+// Проверяем заполнены ли все поля и записываем в localStorage кол-во детей и взрослых, иначе трясем окно формы
 form.addEventListener("submit", function (evt) {
   if (!arrDate.value || !depDate.value || !grown.value || !child.value) {
     evt.preventDefault();
@@ -44,6 +48,7 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
+// Закрытие модального окна клавишей Esc
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
