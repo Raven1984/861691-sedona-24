@@ -33,7 +33,7 @@ butn.addEventListener("click", function (evt) {
   arrDate.focus();
 });
 
-// Проверяем заполнены ли все поля и записываем в localStorage кол-во детей и взрослых, иначе трясем окно формы
+// Проверяем заполнены ли все поля при отправке формы и записываем в localStorage кол-во детей и взрослых, иначе трясем окно формы
 form.addEventListener("submit", function (evt) {
   if (!arrDate.value || !depDate.value || !grown.value || !child.value) {
     evt.preventDefault();
