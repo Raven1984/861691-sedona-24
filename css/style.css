@@ -541,7 +541,7 @@ span.website-by {
 
 @keyframes openup {
   0% {
-    transform: translateY(-300px);
+    transform: translateY(-400px);
   }
 
   100% {
