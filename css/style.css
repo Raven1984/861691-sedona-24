@@ -8,7 +8,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -24,6 +24,10 @@ img {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.container {
+  background-color: #ffffff;
 }
 
 /* Стилизация блока header */
@@ -281,12 +285,12 @@ h3.with-icon.icon-3::before {
   background-color: #766357;  
 }
 
-.popap-button-container {
+.popup-button-container {
   position: relative;
   margin-left: 316px;
 }
 
-.button-popap {
+.button-popup {
   padding: 30px 140px;
   font-size: 21px;
   line-height: 26px;
@@ -364,14 +368,14 @@ h3.with-icon.icon-3::before {
   cursor: pointer;
 }
 
-.button-popap:hover,
-.button-popap:focus,
+.button-popup:hover,
+.button-popup:focus,
 .button-reserv:hover,
 .button-reserv:focus {
   background-color: #604e43;
 }
 
-.button-popap:active,
+.button-popup:active,
 .button-reserv:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
@@ -416,12 +420,18 @@ h3.with-icon.icon-3::before {
   overflow: hidden;
 }
 
+.map iframe {
+  z-index: 1;
+  border: none;
+}
+
 /* Стилизация блока footer */
 .main-footer .footer-container {
   padding: 36px 73px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #ffffff;
 }
 
 p.visitsedona {
@@ -517,7 +527,9 @@ span.website-by {
 }
 
 /* Стилизация блока popap */
-.popap-find-form {
+.popup-find-form {
+  z-index: 2;
+  display: none;
   position: absolute;
   padding: 55px;
   width: 568px;
@@ -525,6 +537,47 @@ span.website-by {
   background-color: #ffffff;
 
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+@keyframes openup {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: openup 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .grown-children {
