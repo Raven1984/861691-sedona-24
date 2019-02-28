@@ -415,22 +415,32 @@ h3.with-icon.icon-3::before {
 }
 
 .map {
-  height: 473px;
+  position: absolute;
+  height: 593px;
   overflow: hidden;
 }
 
 .map iframe {
-  z-index: 1;
   border: none;
 }
 
 /* Стилизация блока footer */
+
+.main-page .main-footer {
+  position: relative;
+  margin-top: 473px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.inner-page .main-footer {
+  background-color: #ffffff;
+}
+
 .main-footer .footer-container {
   padding: 36px 73px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #ffffff;
 }
 
 p.visitsedona {
