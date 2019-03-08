@@ -152,7 +152,7 @@ img {
 }
 
 .feature-item-discription {
-  padding: 50px 40px;
+  padding: 47px 50px 60px;
 }
 
 .feature-item:nth-of-type(1) .feature-item-background {
@@ -171,20 +171,21 @@ img {
 }
 
 .nested-item {
-  padding: 50px 60px 60px;
+  padding: 47px 60px 60px;
   width: 400px;
   box-sizing: border-box;
   background-color: #eeeeee;
 }
 
 .nested-item.stretched {
-  padding: 170px 60px 80px;
+  padding: 160px 60px 80px;
   background-color: #ffffff;
 }
 
 .feature-item h3 {
   margin: 0;
   padding: 0;
+  padding: 0 60px;
   margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
@@ -617,7 +618,7 @@ span.website-by {
 .find-form-item input {
   padding: 0;
   margin: 0;
-  padding: 12px;
+  padding: 0 12px;
   box-sizing: border-box;
   font: inherit;
   background-color: #f2f2f2;
@@ -628,7 +629,7 @@ span.website-by {
 }
 
 .grown-children input {
-  padding: 12px 14px;
+  padding: 0 14px;
   width: 38px;
 }
 
@@ -823,6 +824,12 @@ label.grow-label {
   flex-direction: column; 
 }
 
+a.hotel-type {
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+}
+
 .catlog-block {
   display: flex;
   flex-direction: row;
@@ -836,7 +843,7 @@ label.grow-label {
 .catlog-block p {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -914,7 +921,7 @@ label.grow-label {
   align-items: center;
 }
 
-.main-sorting p:nth-child(1) {
+.main-sorting b {
   margin: 0;
   padding: 0;
   padding-right: 50px;
